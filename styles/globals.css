@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-[#f8f9fa] p-3 rounded-md text-sm text-gray-800 hover:ring-1 hover:ring-gray-200 hover:shadow-lg focus:outline-none focus:ring-1 focus:ring-gray-200 active:ring-gray-300 active:shadow-md;
+  }
+}
+
+/* HOME PAGE */
+.home-form {
+  @apply flex flex-col items-center pt-40;
+}
+.home-form-input {
+  @apply flex justify-center items-center mt-5 mx-auto px-5 py-3 w-[90%] border border-gray-200 rounded-full hover:shadow-lg focus-within:shadow-lg sm:max-w-xl lg:max-w-2xl;
+}
+.home-form-buttons {
+  @apply flex mt-8 w-[50%] flex-col justify-center space-y-2 sm:flex-row sm:space-y-0 sm:space-x-4;
+}
+
+/* HEADER COMPONENT */
+.main-header {
+  @apply flex p-5 justify-between text-sm text-gray-700;
+}
+.header-links {
+  @apply flex space-x-4 items-center;
+}
+
+/* FOOTER COMPONENT */
+.footer {
+  @apply absolute bottom-0 left-[50%] translate-x-[-50%] text-center whitespace-nowrap;
+}
+.footer-text {
+  @apply italic py-1 text-sm;
+}
+.copyright {
+  @apply py-3 text-sm text-gray-600;
+}
+
+/* SEARCH HEADER COMPONENT */
+.search-header {
+  @apply sticky top-0 bg-white;
+}
+.search-header-input {
+  @apply flex flex-col p-6 w-full items-center justify-center space-y-5 sm:flex-row sm:space-y-0;
+}
+.search-header-form {
+  @apply flex px-6 py-3 w-[80%] border border-gray-200 rounded-full shadow-lg sm:flex-grow max-w-3xl items-center sm:ml-10 sm:mr-5;
+}
+.search-header-form input {
+  @apply w-full focus:outline-none;
+}
+
+/* SEARCH HEADER OPTIONS COMPONENT */
+.search-header-options {
+  @apply flex w-full border-b justify-center space-x-8 text-sm text-gray-700 select-none lg:pl-52 lg:justify-start;
+}
+
+/* SEARCH RESULTS COMPONENT */
+.search-results {
+  @apply w-full mx-auto px-3 sm:pl-[5%] md:pl-[14%] lg:pl-52;
+}
+.search-results-detail {
+  @apply text-gray-600 text-sm mb-5 mt-3 pl-4 sm:pl-0;
+}
+
+/* PAGINATION BUTTONS COMPONENT */
+.pagination-buttons {
+  @apply flex px-9 pb-4 justify-between
+  text-blue-700 sm:justify-start sm:space-x-44 sm:px-0;
+}
+.pagination-button {
+  @apply cursor-pointer flex flex-col items-center hover:underline;
+}
