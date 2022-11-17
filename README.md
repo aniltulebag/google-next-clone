@@ -13,7 +13,7 @@ A very simple Google clone application made for learning Next.js and NextAuth.js
 
 ## Demo
 
-[Demo Link]()
+[Demo Link](https://google-next-clone-three.vercel.app/)
 
 ## Screenshots
 
@@ -30,7 +30,7 @@ A very simple Google clone application made for learning Next.js and NextAuth.js
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/aniltulebag/google-next-clone.git
 ```
 
 Go to the project directory
